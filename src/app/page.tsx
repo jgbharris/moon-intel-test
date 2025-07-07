@@ -1,4 +1,5 @@
-import MatchTable from "./components/table";
+// import MatchTable from "./components/table";
+import AggregateTable from "./components/aggregateTable";
 import styles from "./page.module.css";
 import Image from "next/image";
 import { matchData } from "./mockJSON/matchData";
@@ -17,7 +18,7 @@ export default function Home() {
         <h1>Jim Bet</h1>
         <div className={styles.tableContainer}>
           <div className={styles.table}>
-            <MatchTable data={matchData} />
+            <AggregateTable data={matchData} />
           </div>
         </div>
       </div>
